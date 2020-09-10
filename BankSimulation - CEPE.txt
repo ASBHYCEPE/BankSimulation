@@ -65,7 +65,7 @@ while curCount > 0:
 	    		break
 		runTimeB = runTimeB + 1
 
-    if runTimeB == timeItTakesB:
+    if runTimeB == timeItTakesB and runTimeC != 9:
         runTimeB = 0;
         hasCustB = False   
 
