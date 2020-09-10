@@ -44,7 +44,9 @@ while curCount > 0:
     if hasCustA == False and runtTimeB != 5 and runTimeC != 10:
         if len(aCustomers) > 0:
             tellerA.append(aCustomers.pop(0))
-            hasCustA = True            
+            hasCustA = True
+	else:
+	    break           
 
     runTimeA = runTimeA + 1
     if runTimeA == timeItTakesA:
@@ -57,6 +59,8 @@ while curCount > 0:
         if len(aCustomers) > 0:
             tellerB.append(aCustomers.pop(0))
             hasCustB = True 
+	else:
+	    break
 
     runTimeB = runTimeB + 1
     if runTimeB == timeItTakesB:
@@ -69,6 +73,8 @@ while curCount > 0:
         if len(aCustomers) > 0:
             tellerC.append(aCustomers.pop(0))
             hasCustC = True 
+	else:
+	    break
 
     runTimeC = runTimeC + 1	
     if runTimeC == timeItTakesC:
