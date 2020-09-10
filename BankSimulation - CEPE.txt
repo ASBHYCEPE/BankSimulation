@@ -41,16 +41,16 @@ transCounter = 0
 while curCount > 0:
     transCounter = transCounter + 1
 
-    if runTimeB != 5: 
-    	if hasCustA == False:
-        	if len(aCustomers) > 0:
-            		tellerA.append(aCustomers.pop(0))
-            		hasCustA = True
-		else:
-	    		break           
-		runTimeA = runTimeA + 1
+    if hasCustA == False:
+        if len(aCustomers) > 0:
+            tellerA.append(aCustomers.pop(0))
+            hasCustA = True
+	else:
+	    break   
+        
+    runTimeA = runTimeA + 1
 
-    if runTimeA == timeItTakesA:
+    if runTimeB != 4 and runTimeC != 9:
         runTimeA = 0;
         hasCustA = False   
 
