@@ -47,8 +47,8 @@ while curCount > 0:
             hasCustA = True
 	else:
 	    break           
+	runTimeA = runTimeA + 1
 
-    runTimeA = runTimeA + 1
     if runTimeA == timeItTakesA:
         runTimeA = 0;
         hasCustA = False   
@@ -61,8 +61,8 @@ while curCount > 0:
             hasCustB = True 
 	else:
 	    break
+	runTimeB = runTimeB + 1
 
-    runTimeB = runTimeB + 1
     if runTimeB == timeItTakesB:
         runTimeB = 0;
         hasCustB = False   
