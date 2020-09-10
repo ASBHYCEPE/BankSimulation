@@ -41,7 +41,7 @@ transCounter = 0
 while curCount > 0:
     transCounter = transCounter + 1
 
-    if hasCustA == False and runtTimeB != 5 and runtimeC != 10:
+    if hasCustA == False and runtTimeB != 5 and runTimeC != 10:
         if len(aCustomers) > 0:
             tellerA.append(aCustomers.pop(0))
             hasCustA = True            
